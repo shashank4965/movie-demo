@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form onsubmit="return myfunction(event)">
+        <label for="name">ENTER MOVIE ID:</label><br>
+        <input type="text" id="name"><br>
+        <button type="submit" onclick="myfunction()">enter</button>
+        <a href="" name="play" id="play" >play</a>
+    </form>
+  
+    <script>
+        function myfunction(event){
+            event.preventDefault();
+            var movieid= document.getElementById("name").value;
+            var play=document.getElementById("play");
+            play.href="https://vidsrc.icu/embed/movie/tt"+movieid;
+            
+            
+
+           
+        return false;
+        }
+    </script>
+    
+</body>
+</html>
