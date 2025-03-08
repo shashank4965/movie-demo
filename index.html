@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+    <div class="wrapper">
     <form onsubmit="return myfunction(event)">
-        <label for="name">ENTER MOVIE ID:</label><br>
-        <input type="text" id="name"><br>
+        <div class="header"><label for="name" >ENTER MOVIE ID:</label></div><br>
+        <input type="text" id="name" class="inputbox" ><br><br>
+        <div class="buttons1">
         <button type="submit" onclick="myfunction()">enter</button>
-        <a href="" name="play" id="play" >play</a>
+        <button ><a href="" name="play" id="play" >play</a></button>
+        </div>
     </form>
-  
+    </div>
     <script>
         function myfunction(event){
             event.preventDefault();
